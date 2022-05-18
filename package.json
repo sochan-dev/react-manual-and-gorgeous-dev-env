@@ -1,0 +1,20 @@
+{
+  "name": "react-manual-and-gorgeous-dev-env",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sochan-dev/react-manual-and-gorgeous-dev-env.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sochan-dev/react-manual-and-gorgeous-dev-env/issues"
+  },
+  "homepage": "https://github.com/sochan-dev/react-manual-and-gorgeous-dev-env#readme"
+}
