@@ -1,20 +1,55 @@
 {
-  "name": "react-manual-and-gorgeous-dev-env",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sochan-dev/react-manual-and-gorgeous-dev-env.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sochan-dev/react-manual-and-gorgeous-dev-env/issues"
-  },
-  "homepage": "https://github.com/sochan-dev/react-manual-and-gorgeous-dev-env#readme"
+    "name": "react-manual-and-gorgeous-dev-env",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build": "webpack --watch",
+        "dev": "webpack serve --open",
+        "lint-fix": "eslint --fix  --ext .ts,.tsx ./src &&  prettier --write --ignore-path .gitignore \"./**/*.{js,jsx,ts,tsx,json,css}\"",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sochan-dev/react-manual-and-gorgeous-dev-env.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/sochan-dev/react-manual-and-gorgeous-dev-env/issues"
+    },
+    "homepage": "https://github.com/sochan-dev/react-manual-and-gorgeous-dev-env#readme",
+    "dependencies": {
+        "@types/react": "^18.0.9",
+        "@types/react-dom": "^18.0.4",
+        "react": "^18.1.0",
+        "react-dom": "^18.1.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.17.12",
+        "@babel/preset-env": "^7.17.12",
+        "@babel/preset-react": "^7.17.12",
+        "@typescript-eslint/eslint-plugin": "^5.25.0",
+        "@typescript-eslint/parser": "^5.25.0",
+        "babel-loader": "^8.2.5",
+        "css-loader": "^6.7.1",
+        "eslint": "^8.15.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-airbnb-typescript": "^17.0.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-config-typescript": "^3.0.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-jsx-a11y": "^6.5.1",
+        "eslint-plugin-react": "^7.30.0",
+        "eslint-plugin-react-hooks": "^4.5.0",
+        "prettier": "^2.6.2",
+        "sass": "^1.51.0",
+        "sass-loader": "^12.6.0",
+        "style-loader": "^3.3.1",
+        "ts-loader": "^9.3.0",
+        "typescript": "^4.6.4",
+        "webpack": "^5.72.1",
+        "webpack-cli": "^4.9.2",
+        "webpack-dev-server": "^4.9.0"
+    }
 }

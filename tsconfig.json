@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        //宣言ファイル(d.ts)の型チェックを飛ばす。
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        //プログラムがディスク上のケーシングとは異なるケーシングでファイルをインクルードしようとすると、TypeScriptはエラーを発行
+        "forceConsistentCasingInFileNames": true,
+        //switch分のフォールスルーに対してエラーを吐かせる。
+        "noFallthroughCasesInSwitch": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        //単一ファイルの変換プロセスでは正しく解釈できない特定のコードを記述した場合に警告。他のトランスパイラーが上手く動きやすいようにしてる？？
+        "isolatedModules": true,
+        /*javaScriptソースコード、ソースマップ、宣言などのコンパイラ出力ファイルを出力させない。
+      Babelやswcなどの別のツールがTypeScriptファイルをJavaScript環境内で実行できるファイルに変換するためのスペースが確保
+      */
+        "noEmit": false,
+        "jsx": "react-jsx"
+    },
+    "include": ["./src/**/*"]
+}
